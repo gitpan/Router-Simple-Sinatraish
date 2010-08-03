@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use parent qw/Exporter/;
 use 5.00800;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use Router::Simple;
 
 our @EXPORT = qw/router any get post/;
@@ -11,6 +11,7 @@ our @EXPORT = qw/router any get post/;
 sub router {
     my $class = shift;
     no strict 'refs';
+    no warnings 'once';
     ${"${class}::ROUTER"} ||= Router::Simple->new();
 }
 
@@ -50,7 +51,7 @@ __END__
 
 =head1 NAME
 
-Router::Simple::Sinatraish -
+Router::Simple::Sinatraish - Sinatra-ish routers on Router::Simple
 
 =head1 SYNOPSIS
 

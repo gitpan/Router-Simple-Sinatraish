@@ -1,5 +1,5 @@
 ---
-abstract: ~
+abstract: 'Sinatra-ish routers on Router::Simple'
 author:
   - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>'
 build_requires:
@@ -24,4 +24,4 @@ requires:
   perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
