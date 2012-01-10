@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use parent qw/Exporter/;
 use 5.00800;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use Router::Simple;
 
 our @EXPORT = qw/router any get post/;
@@ -135,7 +135,7 @@ Add new route, handles any HTTP method.
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF GMAIL COME<gt>
+Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>
 
 =head1 SEE ALSO
 

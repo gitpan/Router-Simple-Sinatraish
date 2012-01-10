@@ -1,13 +1,13 @@
 ---
 abstract: 'Sinatra-ish routers on Router::Simple'
 author:
-  - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>'
+  - 'Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.98
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112621'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,10 +18,14 @@ no_index:
     - inc
     - t
     - xt
+provides:
+  Router::Simple::Sinatraish:
+    file: lib/Router/Simple/Sinatraish.pm
+    version: 0.03
 requires:
-  Router::Simple: 0.06
+  Router::Simple: 0.09
   parent: 0
-  perl: 5.8.0
+  perl: 5.00800
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03
